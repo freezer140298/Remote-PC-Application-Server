@@ -1,0 +1,5 @@
+2019-11-20 20:46:13,430 WARN  [DefaultSoapUICore] Missing folder [/home/freezer/ext] for external libraries
+2019-11-20 20:46:13,633 INFO  [DefaultSoapUICore] initialized soapui-settings from [/home/freezer/soapui-settings.xml]
+2019-11-20 20:46:14,033 INFO  [WorkspaceImpl] Loading workspace from [/home/freezer/intellij-soapui-workspace.xml]
+2019-11-20 20:46:58,500 INFO  [WorkspaceImpl] Saved workspace to [/home/freezer/intellij-soapui-workspace.xml]
+2019-11-20 20:46:58,503 INFO  [DefaultSoapUICore] Settings saved to [/home/freezer/soapui-settings.xml]

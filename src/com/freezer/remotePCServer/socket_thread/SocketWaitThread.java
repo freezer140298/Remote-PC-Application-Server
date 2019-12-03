@@ -15,6 +15,7 @@ public class SocketWaitThread implements Runnable, WaitThread {
     private MutableBoolean isWFWaiting;
     private MutableBoolean isWFConnected;
     private int port;
+    private ServerSocket serverSocket = null;
 
     private SocketProcessConnectionThread processThread;
 
@@ -31,7 +32,6 @@ public class SocketWaitThread implements Runnable, WaitThread {
     }
 
     private void waitForConnection(){
-        ServerSocket serverSocket = null;
         BufferedReader bufferedReader;
         try{
             serverSocket = new ServerSocket(port);
@@ -61,6 +61,11 @@ public class SocketWaitThread implements Runnable, WaitThread {
         isWFConnected.setFalse();
         isWFWaiting.setFalse();
         System.out.println(Thread.currentThread().getId() + " interrupted");
+        try {
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Thread.currentThread().interrupt();
     }
 

@@ -6,7 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dfb4436-75ae-46ba-bebd-e218d8470eca" name="Default Changelist" comment="" />
+    <list default="true" id="2dfb4436-75ae-46ba-bebd-e218d8470eca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/global-groovy.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soapui-errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soapui.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Remote_PC_Server_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Remote_PC_Server_jar/Remote PC Server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Remote_PC_Server_jar/Remote PC Server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/META-INF/Remote PC Server.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/WaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/WaitThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/CommandProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/MouseKeyboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/MouseKeyboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketWaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketWaitThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketWaitThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketWaitThread.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +42,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SB9UnAW46v9ERIAiS2mUznBGbI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -30,10 +58,10 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -108,11 +136,33 @@
       <workItem from="1573036673980" duration="130000" />
       <workItem from="1573037377244" duration="119000" />
       <workItem from="1573038110313" duration="158000" />
+      <workItem from="1574257384287" duration="87000" />
+      <workItem from="1574257591132" duration="28000" />
+      <workItem from="1574257710004" duration="395000" />
+      <workItem from="1574263464641" duration="686000" />
+      <workItem from="1574266474544" duration="1537000" />
+      <workItem from="1574432903569" duration="68000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
