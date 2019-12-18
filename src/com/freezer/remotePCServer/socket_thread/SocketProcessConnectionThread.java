@@ -2,14 +2,17 @@ package com.freezer.remotePCServer.socket_thread;
 
 import com.freezer.remotePCServer.controller.CommandProcessor;
 
+import javax.swing.*;
 import java.io.DataInputStream;
 import java.io.IOException;
 
 public class SocketProcessConnectionThread implements Runnable {
     private DataInputStream inputStream;
+    private JLabel statusLabel;
 
-    public SocketProcessConnectionThread(DataInputStream inputStream) {
+    public SocketProcessConnectionThread(DataInputStream inputStream, JLabel statusLabel) {
         this.inputStream = inputStream;
+        this.statusLabel = statusLabel;
         System.out.println("Incoming connection");
     }
 
@@ -27,6 +30,8 @@ public class SocketProcessConnectionThread implements Runnable {
                 {
                     System.out.println("Exit from current thread");
                     inputStream.close();
+
+                    statusLabel.setText("Status : Connection closed");
                     Thread.currentThread().interrupt();
                     return;
                 }
@@ -34,13 +39,12 @@ public class SocketProcessConnectionThread implements Runnable {
                     commandProcessor.parseCommand(incomingCommand);
                     commandProcessor.implementCommand();
                 } catch(StringIndexOutOfBoundsException e) {
-                    System.out.println("ERROR AT (IndexOutOfBounds): " + incomingCommand);
+                    System.out.println("(IndexOutOfBounds) ERROR AT : " + incomingCommand);
                     System.out.println(incomingCommand);
                 } catch(NumberFormatException e2) {
-                    System.out.println("ERROR AT (NumberFormat): " + incomingCommand);
+                    System.out.println("(NumberFormat) ERROR AT : " + incomingCommand);
                     System.out.println(incomingCommand);
                 }
-
             } catch (IOException e) {
                 e.printStackTrace();
             }

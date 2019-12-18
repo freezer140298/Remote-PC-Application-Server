@@ -1,5 +1,7 @@
 package com.freezer.remotePCServer.bluetooth_thread;
 
+import com.freezer.remotePCServer.WaitThread;
+import com.intel.bluetooth.BlueCoveImpl;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
 import javax.bluetooth.*;
@@ -8,12 +10,17 @@ import javax.microedition.io.StreamConnection;
 import javax.microedition.io.StreamConnectionNotifier;
 import javax.swing.*;
 import java.io.IOException;
+import java.io.InterruptedIOException;
 
 
 public class BluetoothWaitThread implements Runnable, WaitThread {
     private JLabel statusLabel;
     private MutableBoolean isBTWaiting;
     private MutableBoolean isBTConnected;
+
+    private LocalDevice local;
+    private StreamConnectionNotifier notifier;
+    private StreamConnection connection;
 
     BluetoothProcessConnectionThread processThread;
 
@@ -29,10 +36,6 @@ public class BluetoothWaitThread implements Runnable, WaitThread {
     }
 
     private void waitForConnection(){
-        LocalDevice local = null;
-
-        StreamConnectionNotifier notifier;
-        StreamConnection connection = null;
         try{
             local = LocalDevice.getLocalDevice();
             local.setDiscoverable(DiscoveryAgent.GIAC);
@@ -52,7 +55,7 @@ public class BluetoothWaitThread implements Runnable, WaitThread {
             local.setDiscoverable(DiscoveryAgent.NOT_DISCOVERABLE);
 
             statusLabel.setText("Status : Bluetooth connection was established");
-            processThread = new BluetoothProcessConnectionThread(connection);
+            processThread = new BluetoothProcessConnectionThread(connection, statusLabel);
 
             isBTConnected.setTrue();
             isBTWaiting.setFalse();
@@ -69,12 +72,13 @@ public class BluetoothWaitThread implements Runnable, WaitThread {
         statusLabel.setText("Status : Ready");
         isBTConnected.setFalse();
         isBTWaiting.setFalse();
-        System.out.println(Thread.currentThread().getId() + " interrupted");
+        System.out.println(Thread.currentThread().getId() + " has been interrupted");
+        BlueCoveImpl.shutdown();
         Thread.currentThread().interrupt();
     }
 
     @Override
-    public void printCurrentThreadId() {
-        System.out.println(Thread.currentThread().getId());
+    public long getCurrentThreadId() {
+        return Thread.currentThread().getId();
     }
 }

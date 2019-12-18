@@ -3,16 +3,18 @@ package com.freezer.remotePCServer.bluetooth_thread;
 import com.freezer.remotePCServer.controller.CommandProcessor;
 
 import javax.microedition.io.StreamConnection;
+import javax.swing.*;
 import java.io.IOException;
 import java.io.InputStream;
 
 
 public class BluetoothProcessConnectionThread implements Runnable {
     private StreamConnection streamConnection;
+    private JLabel statusLabel;
 
-
-    public BluetoothProcessConnectionThread(StreamConnection streamConnection) {
+    public BluetoothProcessConnectionThread(StreamConnection streamConnection, JLabel statusLabel) {
         this.streamConnection = streamConnection;
+        this.statusLabel = statusLabel;
         System.out.println("Bluetooth incoming connection");
     }
 
@@ -30,8 +32,10 @@ public class BluetoothProcessConnectionThread implements Runnable {
                     String incomingCommand = new String(buffer, 0, bytesRead);
                     if(incomingCommand.contains("EXIT_CMD"))
                     {
-                        System.out.println("Exit from current thread");
+                        System.out.println("Stop processing thread");
                         inputStream.close();
+
+                        statusLabel.setText("Status : Connection closed");
                         Thread.currentThread().interrupt();
                         return;
                     }
@@ -39,10 +43,10 @@ public class BluetoothProcessConnectionThread implements Runnable {
                         commandProcessor.parseCommand(incomingCommand);
                         commandProcessor.implementCommand();
                     } catch(StringIndexOutOfBoundsException e) {
-                        System.out.println("ERROR AT (IndexOutOfBounds): " + incomingCommand);
+                        System.out.println("(IndexOutOfBounds) ERROR AT : " + incomingCommand);
                         System.out.println(incomingCommand);
                     } catch(NumberFormatException e2) {
-                        System.out.println("ERROR AT (NumberFormat): " + incomingCommand);
+                        System.out.println("(NumberFormat) ERROR AT : " + incomingCommand);
                         System.out.println(incomingCommand);
                     }
 

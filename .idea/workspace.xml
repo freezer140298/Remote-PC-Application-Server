@@ -7,25 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2dfb4436-75ae-46ba-bebd-e218d8470eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/global-groovy.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soapui-errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soapui.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Remote_PC_Server_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Remote_PC_Server_jar/Remote PC Server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Remote_PC_Server_jar/Remote PC Server.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/META-INF/Remote PC Server.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/MainGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/WaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/bluetooth_thread/WaitThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/CommandProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/MouseKeyboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/controller/MouseKeyboardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketWaitThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Remote PC Server/com/freezer/remotePCServer/socket_thread/SocketWaitThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/bluetooth_thread/BluetoothProcessConnectionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/bluetooth_thread/BluetoothWaitThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/bluetooth_thread/WaitThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/WaitThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketProcessConnectionThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketWaitThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/freezer/remotePCServer/socket_thread/SocketWaitThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,6 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,7 +83,7 @@
       <module name="Remote PC Server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.freezer.remotePCServer.bluetooth_thread.*" />
+          <option name="PATTERN" value="com.freezer.remotePCServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,7 +96,7 @@
       <module name="Remote PC Server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.freezer.remotePCServer.bluetooth_thread.*" />
+          <option name="PATTERN" value="com.freezer.remotePCServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,6 +136,10 @@
       <workItem from="1574263464641" duration="686000" />
       <workItem from="1574266474544" duration="1537000" />
       <workItem from="1574432903569" duration="68000" />
+      <workItem from="1575858891935" duration="6920000" />
+      <workItem from="1575875671419" duration="349000" />
+      <workItem from="1576116033229" duration="620000" />
+      <workItem from="1576118035432" duration="5297000" />
     </task>
     <servers />
   </component>

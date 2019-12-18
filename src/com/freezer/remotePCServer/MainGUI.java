@@ -55,7 +55,7 @@ public class MainGUI {
                         bluetoothWaitThreadObject = new BluetoothWaitThread(statusLabel, isBTWaiting, isBTConnected);
                         bluetoothWaitThread = new Thread(bluetoothWaitThreadObject);
                         bluetoothWaitThread.start();
-                        bluetoothWaitThreadObject.printCurrentThreadId();
+                        System.out.println("Thread "  + bluetoothWaitThreadObject.getCurrentThreadId() + " has started");
                         statusLabel.setText("Status : Waiting for bluetooth connection...");
                         isBTWaiting.setTrue();
                     }
@@ -85,7 +85,7 @@ public class MainGUI {
                         socketWaitThreadObject = new SocketWaitThread(Integer.parseInt(portTextField.getText()),statusLabel, isWFWaiting, isWFConnected);
                         socketWaitThread = new Thread(socketWaitThreadObject);
                         socketWaitThread.start();
-                        socketWaitThreadObject.printCurrentThreadId();
+                        System.out.println("Thread "  + socketWaitThreadObject.getCurrentThreadId() + " has started");
                         statusLabel.setText("Status : Waiting for socket connection...");
                         isWFWaiting.setTrue();
                     }
@@ -138,8 +138,8 @@ public class MainGUI {
         mainGUI.jFrame.setResizable(false);
         mainGUI.jFrame.setSize(415,210);
         mainGUI.jFrame.setVisible(true);
-    }
 
+    }
 
     private static boolean isNumeric(final String str) {
         // null or empty
@@ -153,4 +153,5 @@ public class MainGUI {
         }
         return true;
     }
+
 }

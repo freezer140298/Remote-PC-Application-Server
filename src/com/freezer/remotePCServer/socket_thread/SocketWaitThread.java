@@ -1,6 +1,6 @@
 package com.freezer.remotePCServer.socket_thread;
 
-import com.freezer.remotePCServer.bluetooth_thread.WaitThread;
+import com.freezer.remotePCServer.WaitThread;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
 import javax.swing.*;
@@ -47,7 +47,7 @@ public class SocketWaitThread implements Runnable, WaitThread {
             statusLabel.setText("Status : Socket connection was established");
             DataInputStream inputStream = new DataInputStream(server.getInputStream());
             System.out.println(server.getRemoteSocketAddress());
-            processThread = new SocketProcessConnectionThread(inputStream);
+            processThread = new SocketProcessConnectionThread(inputStream, statusLabel);
             processThread.run();
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,7 +60,7 @@ public class SocketWaitThread implements Runnable, WaitThread {
         statusLabel.setText("Status : Ready");
         isWFConnected.setFalse();
         isWFWaiting.setFalse();
-        System.out.println(Thread.currentThread().getId() + " interrupted");
+        System.out.println(Thread.currentThread().getId() + " has been interrupted");
         try {
             serverSocket.close();
         } catch (IOException e) {
@@ -70,7 +70,7 @@ public class SocketWaitThread implements Runnable, WaitThread {
     }
 
     @Override
-    public void printCurrentThreadId() {
-        System.out.println(Thread.currentThread().getId());
+    public long getCurrentThreadId() {
+        return Thread.currentThread().getId();
     }
 }
